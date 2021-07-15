@@ -27,6 +27,9 @@ $body = '{"data": {
      "vendor-po": "1467988109",
      "shipping-method": "SAMPLE",
      "shipping-account-number": "1234",
+     "shipping-details": {
+        "IOSS": "GB295849305"
+      }
    }
  },
  "included": [
@@ -69,6 +72,7 @@ $body = '{"data": {
        "item-properties": {
          "thread-color": "white",
          "hs-code": "1234.56.789" 
+         "declared-value": "12.99" 
        },
        "designs": [
          {
