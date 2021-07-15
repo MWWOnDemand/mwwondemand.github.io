@@ -25,7 +25,10 @@ def send_request():
               "vendor-po": "14679881092",
               "shipping-method": "SAMPLE",
               "shipping-account-number": "1234",
-              "test-order": "test"
+              "test-order": "test",
+              "shipping-details": {
+                "IOSS": "GB295849305"
+              }
             }
           },
           "included": [
@@ -68,6 +71,7 @@ def send_request():
                 "item-properties": {
                   "thread-color": "white",
                   "hs-code": "1234.56.789"
+                  "declared-value": "1234.56.789"
                 },
                 "designs": [
                   {

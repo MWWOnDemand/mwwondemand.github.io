@@ -10,7 +10,10 @@ curl -X "POST" "http://api.mwwondemand.com/api/orders" \
       "vendor-po": "1467988109",
       "shipping-method": "SAMPLE",
       "shipping-account-number": "1234",
-      "test-order": "test"
+      "test-order": "test",
+      "shipping-details": {
+        "IOSS": "GB295849305"
+      }
     }
   },
   "included": [
@@ -52,7 +55,8 @@ curl -X "POST" "http://api.mwwondemand.com/api/orders" \
         "customer-product-code": "YOUR_UPC/SKU_NUMBER",
         "item-properties": {
           "thread-color": "white",
-          "hs-code": "1234.56.789"
+          "hs-code": "1234.56.789",
+          "declared-value": "12.99"
         },
         "designs": [
           {
