@@ -10,7 +10,10 @@
       "vendor-po": "1467988109",
       "shipping-method": "SAMPLE",
       "shipping-account-number": "1234",
-      "test-order": "test"
+      "test-order": "test",
+      "shipping-details": {
+        "IOSS": "GB295849305"
+      }
     }
   },
   "included": [
@@ -52,7 +55,8 @@
         "customer-product-code": "YOUR_UPC/SKU_NUMBER",
         "item-properties": {
           "thread-color": "white",
-          "hs-code": "1234.56.789"
+          "hs-code": "1234.56.789",
+          "declared-value": "12.99"
         },
         "designs": [
           {
@@ -121,9 +125,12 @@
        "vendor-po": "14679881309",
        "shipping-method": "SAMPLE",
        "shipping-account-number": "1234",
-       "test-order": "test"
-     }
-   },
+       "test-order": "test",
+       "shipping-details": {
+        "IOSS": "GB295849305"
+       }
+      }
+    },
    "included": [
      {
        "type": "shipping-address",
@@ -182,6 +189,7 @@
          "item-properties": {
            "thread-color": "white",
            "hs-code": "1234.56.789"
+           "declared-value": "12.99"
          },
          "designs": [
            {
@@ -242,7 +250,10 @@
               "vendor-po": "14679881092",
               "shipping-method": "SAMPLE",
               "shipping-account-number": "1234",
-              "test-order": "test"
+              "test-order": "test",
+              "shipping-details": {
+                "IOSS": "GB295849305"
+              }
             }
           },
           "included": [
@@ -285,6 +296,7 @@
                 "item-properties": {
                   "thread-color": "white",
                   "hs-code": "1234.56.789"
+                  "declared-value": "1234.56.789"
                 },
                 "designs": [
                   {
@@ -362,6 +374,9 @@
      "vendor-po": "1467988109",
      "shipping-method": "SAMPLE",
      "shipping-account-number": "1234",
+     "shipping-details": {
+        "IOSS": "GB295849305"
+      }
    }
  },
  "included": [
@@ -404,6 +419,7 @@
        "item-properties": {
          "thread-color": "white",
          "hs-code": "1234.56.789" 
+         "declared-value": "12.99" 
        },
        "designs": [
          {
@@ -502,6 +518,9 @@
                   <span class="s">"\"shipping-method\": \"SAMPLE\","</span><span class="o">+</span>
                   <span class="s">"\"shipping-account-number\": \"1234\","</span><span class="o">+</span>
                   <span class="s">"\"test-order\": \"test\""</span><span class="o">+</span>
+                  <span class="s">"\"shipping-details\": {"</span><span class="o">+</span>
+                    <span class="s">"\"IOSS\": \"GB295849305\""</span><span class="o">+</span>
+                  <span class="s">"}"</span><span class="o">+</span>
                 <span class="s">"}"</span><span class="o">+</span>
               <span class="s">"},"</span><span class="o">+</span>
               <span class="s">"\"included\": [{"</span><span class="o">+</span>
@@ -546,6 +565,7 @@
                     <span class="s">"{"</span><span class="o">+</span>
                       <span class="s">"\"thread-color\": \"white\","</span><span class="o">+</span>
                       <span class="s">"\"hs-code\": \"1234.56.789\""</span><span class="o">+</span>
+                      <span class="s">"\"declared-value\": \"12.99\""</span><span class="o">+</span>
                     <span class="s">"},"</span><span class="o">+</span>
                     <span class="s">"\"designs\": ["</span><span class="o">+</span>
                       <span class="s">"{"</span><span class="o">+</span>
@@ -735,6 +755,10 @@
 <td>test-order <br> <em> string </em> <br> optional</td>
 <td>Optional field, &#39;test&#39; for a test order, &#39;new&#39; for a new regular order (defaults to &#39;new&#39;)</td>
 </tr>
+<tr>
+<td>shipping-details <br> <em> object </em> <br> optional</td>
+<td>Optional field, currently accepts &quot;IOSS&quot; key and a string value (for EU/UK shipments)</td>
+</tr>
 </tbody></table>
 
 <p><em>Line Item details</em></p>
@@ -775,7 +799,7 @@
 </tr>
 <tr>
 <td>item-properties <br><em>object (optional)</em></td>
-<td>Additional attributes for some products. This can be omitted in most cases. See products for more information. <br> Options include: alias-item-no, item-price, extended-description, wsf, thread-color, inside-neck-tape-color, cuff-color, string-color, <br>hood-thread-color, body-thread-color, waist-color, item-label, hs-code, height, width, personalization, and unique-id</td>
+<td>Additional attributes for some products. This can be omitted in most cases. See products for more information. <br> Options include: alias-item-no, item-price, extended-description, wsf, thread-color, inside-neck-tape-color, cuff-color, string-color, <br>hood-thread-color, body-thread-color, waist-color, item-label, hs-code, declared-value, height, width, personalization, and unique-id</td>
 </tr>
 <tr>
 <td>designs <br><em>array[single object]</em></td>
