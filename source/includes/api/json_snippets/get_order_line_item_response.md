@@ -12,7 +12,7 @@
       "description": "It's sò fluffy!",
       "quantity": 5,
       "state": "received",
-      "product-code": "3PF-PJT-SLPG4CW",
+      "product-code": "MWW-PRODUCT-CODE",
       "line-number": 2,
       "po": "6477724553765206641477418918.0488908",
       "line-item-count": {
