@@ -16,11 +16,11 @@
 
          ],
          "order-id":"764805828787045582",
-         "product-code":"3PF-SC6-SPFZMP",
-         "customer-product-code":"3PF-SC6-SPFZMP",
+         "product-code":"MWW-PRODUCT-CODE",
+         "customer-product-code":"MWW-PRODUCT-CODE",
          "line-number":4,
          "item-properties":{
-            "label":"PENCIL POUCH POLY SILK",
+            "label":"PENCIL POUCH SPUN POLY",
             "fabric":"PFP POLY SILKY SLUB 61IN",
             "weight":0.25,
             "law_tag":{
