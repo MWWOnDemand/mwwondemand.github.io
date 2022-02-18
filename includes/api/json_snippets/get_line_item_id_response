@@ -16,7 +16,7 @@
          </span><span class="p">],</span><span class="w">
          </span><span class="nl">"order-id"</span><span class="p">:</span><span class="s2">"764805828787045582"</span><span class="p">,</span><span class="w">
          </span><span class="nl">"product-code"</span><span class="p">:</span><span class="s2">"MWW-PRODUCT-CODE"</span><span class="p">,</span><span class="w">
-         </span><span class="nl">"customer-product-code"</span><span class="p">:</span><span class="s2">"MWW-PRODUCT-CODE"</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"customer-product-code"</span><span class="p">:</span><span class="s2">"YOUR_UPC/SKU_NUMBER"</span><span class="p">,</span><span class="w">
          </span><span class="nl">"line-number"</span><span class="p">:</span><span class="mi">4</span><span class="p">,</span><span class="w">
          </span><span class="nl">"item-properties"</span><span class="p">:{</span><span class="w">
             </span><span class="nl">"label"</span><span class="p">:</span><span class="s2">"PENCIL POUCH SPUN POLY"</span><span class="p">,</span><span class="w">
