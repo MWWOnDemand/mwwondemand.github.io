@@ -66,7 +66,7 @@ def send_request():
                 "line-number": 1,
                 "quantity": 2,
                 "description": "It\'s not so fluffy!",
-                "product-code": "3PF-SC6-SPFPI",
+                "product-code": "MWW-PRODUCT-CODE",
                 "customer-product-code": "YOUR_UPC/SKU_NUMBER",
                 "item-properties": {
                   "thread-color": "white",
@@ -86,7 +86,7 @@ def send_request():
                 "line-number": 2,
                 "quantity": 5,
                 "description": "Velour Vest",
-                "product-code": "3PF-SC6-SPFPI",
+                "product-code": "MWW-PRODUCT-CODE",
                 "customer-product-code": "YOUR_UPC/SKU_NUMBER",
                 "item-properties": {
                   "thread-color": "white"

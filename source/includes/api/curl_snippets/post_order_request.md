@@ -51,7 +51,7 @@ curl -X "POST" "http://api.mwwondemand.com/api/orders" \
         "line-number": 1,
         "quantity": 2,
         "description": "It\'s not sò fluffy!",
-        "product-code": "PRT-GEN-ZOH99",
+        "product-code": "MWW-PRODUCT-CODE",
         "customer-product-code": "YOUR_UPC/SKU_NUMBER",
         "item-properties": {
           "thread-color": "white",

@@ -79,7 +79,7 @@ public class SubmitOrder {
                     "\"line-number\": 1,"+
                     "\"quantity\": 2,"+
                     "\"description\": \"It's not sò fluffy!\","+
-                    "\"product-code\": \"PRT-GEN-SLG16S\","+
+                    "\"product-code\": \"MWW-PRODUCT-CODE\","+
                     "\"customer-product-code\": \"YOUR_UPC/SKU_NUMBER\","+
                     "\"item-properties\":"+
                     "{"+
@@ -100,7 +100,7 @@ public class SubmitOrder {
                     "\"line-number\": 2,"+
                     "\"quantity\": 5,"+
                     "\"description\": \"Velour Vest\","+
-                    "\"product-code\": \"PRT-GEN-SLPGP8\","+
+                    "\"product-code\": \"MWW-PRODUCT-CODE\","+
                     "\"customer-product-code\": \"YOUR_UPC/SKU_NUMBER\","+
                     "\"item-properties\":"+
                     "{"+

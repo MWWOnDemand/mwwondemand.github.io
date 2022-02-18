@@ -17,7 +17,7 @@
          ],
          "order-id":"764805828787045582",
          "product-code":"MWW-PRODUCT-CODE",
-         "customer-product-code":"MWW-PRODUCT-CODE",
+         "customer-product-code":"YOUR_UPC/SKU_NUMBER",
          "line-number":4,
          "item-properties":{
             "label":"PENCIL POUCH SPUN POLY",
