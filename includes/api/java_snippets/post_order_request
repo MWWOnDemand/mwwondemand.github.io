@@ -78,7 +78,7 @@
                     <span class="s">"\"line-number\": 1,"</span><span class="o">+</span>
                     <span class="s">"\"quantity\": 2,"</span><span class="o">+</span>
                     <span class="s">"\"description\": \"It's not sò fluffy!\","</span><span class="o">+</span>
-                    <span class="s">"\"product-code\": \"PRT-GEN-SLG16S\","</span><span class="o">+</span>
+                    <span class="s">"\"product-code\": \"MWW-PRODUCT-CODE\","</span><span class="o">+</span>
                     <span class="s">"\"customer-product-code\": \"YOUR_UPC/SKU_NUMBER\","</span><span class="o">+</span>
                     <span class="s">"\"item-properties\":"</span><span class="o">+</span>
                     <span class="s">"{"</span><span class="o">+</span>
@@ -99,7 +99,7 @@
                     <span class="s">"\"line-number\": 2,"</span><span class="o">+</span>
                     <span class="s">"\"quantity\": 5,"</span><span class="o">+</span>
                     <span class="s">"\"description\": \"Velour Vest\","</span><span class="o">+</span>
-                    <span class="s">"\"product-code\": \"PRT-GEN-SLPGP8\","</span><span class="o">+</span>
+                    <span class="s">"\"product-code\": \"MWW-PRODUCT-CODE\","</span><span class="o">+</span>
                     <span class="s">"\"customer-product-code\": \"YOUR_UPC/SKU_NUMBER\","</span><span class="o">+</span>
                     <span class="s">"\"item-properties\":"</span><span class="o">+</span>
                     <span class="s">"{"</span><span class="o">+</span>
