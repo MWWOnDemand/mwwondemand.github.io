@@ -47,7 +47,7 @@
         <span class="s2">"type"</span>: <span class="s2">"mwwondemand-order-items"</span>,
         <span class="s2">"attributes"</span>: <span class="o">{</span>
           <span class="s2">"state"</span>: <span class="s2">"received"</span>,
-          <span class="s2">"product-code"</span>: <span class="s2">"254"</span>,
+          <span class="s2">"product-code"</span>: <span class="s2">"MWW-PRODUCT-CODE"</span>,
           <span class="s2">"line-number"</span>: 1,
           <span class="s2">"quantity"</span>: 1
         <span class="o">}</span>,
