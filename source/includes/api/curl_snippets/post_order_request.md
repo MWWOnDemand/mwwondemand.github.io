@@ -71,7 +71,7 @@ curl -X "POST" "http://api.mwwondemand.com/api/orders" \
         "line-number": 2,
         "quantity": 5,
         "description": "Velour Vest",
-        "product-code": "PRT-GEN-XOH99",
+        "product-code": "MWW-PRODUCT-CODE",
         "customer-product-code": "YOUR_UPC/SKU_NUMBER",
         "item-properties": {
           "thread-color": "white"

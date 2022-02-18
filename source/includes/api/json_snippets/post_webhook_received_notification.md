@@ -48,7 +48,7 @@
         "type": "mwwondemand-order-items",
         "attributes": {
           "state": "received",
-          "product-code": "254",
+          "product-code": "MWW-PRODUCT-CODE",
           "line-number": 1,
           "quantity": 1
         },
