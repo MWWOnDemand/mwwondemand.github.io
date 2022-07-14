@@ -1,0 +1,48 @@
+<div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
+
+<span class="c1">// Get cURL resource</span>
+<span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
+
+<span class="c1">// Set url</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="no">CURLOPT_URL</span><span class="p">,</span> <span class="s1">'https://api.mwwondemand.com/api/webhooks'</span><span class="p">);</span>
+
+<span class="c1">// Set method</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="no">CURLOPT_CUSTOMREQUEST</span><span class="p">,</span> <span class="s1">'POST'</span><span class="p">);</span>
+
+<span class="c1">// Set options</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="no">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+<span class="c1">// Set headers</span>
+<span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="no">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="p">[</span>
+  <span class="s2">"Content-Type: application/vnd.api+json"</span><span class="p">,</span>
+  <span class="s2">"Authorization: &lt;BEARER_TOKEN&gt;,
+  "</span><span class="nc">Accept</span><span class="o">:</span> <span class="n">application</span><span class="o">/</span><span class="n">vnd</span><span class="mf">.</span><span class="n">api</span><span class="o">+</span><span class="n">json</span><span class="p">;</span><span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="s2">",
+ ]
+);
+// Create body
+</span><span class="nv">$body</span><span class="s2"> = '{
+  </span><span class="se">\"</span><span class="s2">data</span><span class="se">\"</span><span class="s2">: {
+    </span><span class="se">\"</span><span class="s2">type</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">webhooks</span><span class="se">\"</span><span class="s2">,
+    </span><span class="se">\"</span><span class="s2">attributes</span><span class="se">\"</span><span class="s2">: {
+      </span><span class="se">\"</span><span class="s2">url</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">http://test</span><span class="se">\"</span><span class="s2">
+    }
+  }
+}';
+
+// Set body
+curl_setopt(</span><span class="nv">$ch</span><span class="s2">, CURLOPT_POST, 1);
+curl_setopt(</span><span class="nv">$ch</span><span class="s2">, CURLOPT_POSTFIELDS, </span><span class="nv">$body</span><span class="s2">);
+
+// Send the request &amp; save response to </span><span class="nv">$resp</span><span class="s2">
+</span><span class="nv">$resp</span><span class="s2"> = curl_exec(</span><span class="nv">$ch</span><span class="s2">);
+
+if(!</span><span class="nv">$resp</span><span class="s2">) {
+  die('Error: "</span><span class="s1">' . curl_error($ch) . '</span><span class="s2">" - Code: ' . curl_errno(</span><span class="nv">$ch</span><span class="s2">));
+} else {
+  echo "</span><span class="nc">Response</span> <span class="no">HTTP</span> <span class="nc">Status</span> <span class="nc">Code</span> <span class="o">:</span> <span class="s2">" . curl_getinfo(</span><span class="nv">$ch</span><span class="s2">, CURLINFO_HTTP_CODE);
+  echo "</span><span class="err">\</span><span class="n">nResponse</span> <span class="no">HTTP</span> <span class="nc">Body</span> <span class="o">:</span> <span class="s2">" . </span><span class="nv">$resp</span><span class="s2">;
+}
+
+// Close request to clear up some resources
+curl_close(</span><span class="nv">$ch</span><span class="s2">);
+</span></code></pre></div>
