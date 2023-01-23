@@ -13,7 +13,10 @@
       "state": "received",
       "shipping-method": "SAMPLE",
       "shipping-account-number": "1234",
-      "vendor-po": "1468436810"
+      "vendor-po": "1468436810",
+       "tracking_numbers": [
+          "XYZ0002KDKRYNNMASDAN"
+        ]
     },
     "relationships": {
       "line-items": {

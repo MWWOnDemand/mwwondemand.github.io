@@ -1,0 +1,106 @@
+{
+  "info": {
+      "_postman_id": "04f03661-54bf-6b6a-8576-1d64c37adc95",
+      "name": "MWW API Requests",
+      "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+      {
+          "name": "Get all orders",
+          "request": {
+              "method": "GET",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/vnd.api+json;version=1"
+                  },
+                  {
+                      "key": "Authorization",
+                      "value": "auth-key=YOUR_API_KEY"
+                  },
+                  {
+                      "key": "Content-Type",
+                      "value": "application/vnd.api+json"
+                  }
+              ],
+              "body": {
+                  "mode": "formdata",
+                  "formdata": []
+              },
+              "url": "https://api.mwwondemand.com/api/orders"
+          },
+          "response": []
+      },
+      {
+          "name": "Get Specific Order",
+          "request": {
+              "method": "GET",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/vnd.api+json;version=1"
+                  },
+                  {
+                      "key": "Authorization",
+                      "value": "auth-key=YOUR_API_KEY"
+                  },
+                  {
+                      "key": "Content-Type",
+                      "value": "application/vnd.api+json"
+                  }
+              ],
+              "body": {
+                  "mode": "formdata",
+                  "formdata": []
+              },
+              "url": "https://api.mwwondemand.com/api/orders/001122334455667788"
+          },
+          "response": []
+      },
+      {
+          "name": "Orders With History Param",
+          "request": {
+              "method": "GET",
+              "header": [
+                  {
+                      "key": "Accept",
+                      "value": "application/vnd.api+json; version=1"
+                  },
+                  {
+                      "key": "Authorization",
+                      "value": "auth-key=YOUR_API_KEY"
+                  },
+                  {
+                      "key": "Content-Type",
+                      "value": "application/vnd.api+json"
+                  }
+              ],
+              "body": {
+                  "mode": "formdata",
+                  "formdata": []
+              },
+              "url": {
+                  "raw": "https://api.mwwondemand.com/api/orders/?history=1",
+                  "protocol": "https",
+                  "host": [
+                      "api",
+                      "mwwondemand",
+                      "com"
+                  ],
+                  "path": [
+                      "api",
+                      "orders",
+                      ""
+                  ],
+                  "query": [
+                      {
+                          "key": "history",
+                          "value": "1"
+                      }
+                  ]
+              }
+          },
+          "response": []
+      }
+  ]
+}
