@@ -64,19 +64,23 @@ If you'd prefer to use Docker, instructions are available [in the wiki](https://
 For those who don't have JavaScript runtime or are experiencing JavaScript runtime issues with ExecJS, it is recommended to add the [rubyracer gem](https://github.com/cowboyd/therubyracer) to your gemfile and run `bundle` again.
 
 
-## How to make changes:
+## How to make changes (direct from Slate Documentation):
 
 * Make changes on your fork and commit.
 * Run `./build.sh`.
 * Create a Pull Request on to **upstream** `master` from your **origin** `master`.
 
+<br/>
+
 ## For MWW Developers: 
 
+* Git clone this repository and pull down the deploy branch
+* Make changes on the deploy branch and push to deploy
 * Make sure you are using Ruby 2.4.1
 * Bundle install dependencies
-* Make changes on the deploy branch and push to deploy
-* To build run 'middleman build' 
-* To deploy run './deploy.sh'
+* To start Middleman server run: 'middleman server'
+* To deploy run: './deploy.sh'
+* Check status of deployed page by visiting this link to verify changes: https://mwwondemand.github.io/#introduction
 
 
 <br/>
