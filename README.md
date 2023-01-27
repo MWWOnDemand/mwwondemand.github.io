@@ -81,6 +81,7 @@ For those who don't have JavaScript runtime or are experiencing JavaScript runti
 * To start Middleman server run: 'middleman server'
 * To deploy run: './deploy.sh'
 * Check status of deployed page by visiting this link to verify changes: https://mwwondemand.github.io/#introduction
+* If you have an issue getting the server to run, try removing "haml" dependency under the middleman section in your gemfile.lock
 
 
 <br/>
