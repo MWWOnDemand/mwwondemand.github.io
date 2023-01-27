@@ -76,7 +76,7 @@ For those who don't have JavaScript runtime or are experiencing JavaScript runti
 * Bundle install dependencies
 * Make changes on the deploy branch and push to deploy
 * To build run 'middleman build' 
-* To deploy run '/deploy.sh'
+* To deploy run './deploy.sh'
 
 
 <br/>
