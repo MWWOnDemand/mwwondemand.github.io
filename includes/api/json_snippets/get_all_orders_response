@@ -12,7 +12,10 @@
         </span><span class="nl">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"received"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"shipping-method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SAMPLE"</span><span class="p">,</span><span class="w">
         </span><span class="nl">"shipping-account-number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"vendor-po"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1467924781"</span><span class="w">
+        </span><span class="nl">"vendor-po"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1467924781"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tracking_numbers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"XYZ0002KDKRYNNMASDAN"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
       </span><span class="p">},</span><span class="w">
            </span><span class="nl">"relationships"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
         </span><span class="nl">"line-items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
