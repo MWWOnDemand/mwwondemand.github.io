@@ -70,6 +70,14 @@ For those who don't have JavaScript runtime or are experiencing JavaScript runti
 * Run `./build.sh`.
 * Create a Pull Request on to **upstream** `master` from your **origin** `master`.
 
+## For MWW Developers: 
+
+* Make sure you are using Ruby 2.4.1
+* Bundle install dependencies
+* Make changes on the deploy branch and push to deploy
+* To build run 'middleman build' 
+* To deploy run '/deploy.sh'
+
 
 <br/>
 
