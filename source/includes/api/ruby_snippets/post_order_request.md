@@ -27,7 +27,9 @@ def send_request
        "shipping-account-number": "1234",
        "test-order": "test",
        "shipping-details": {
-        "IOSS": "GB295849305"
+        "IOSS": "GB295849305",
+        "tracking_url": "https://your.shipping.label.url",
+        "tracking_number": "your tracking number"
        }
       }
     },
