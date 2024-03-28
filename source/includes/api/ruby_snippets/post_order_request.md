@@ -117,6 +117,87 @@ def send_request
 
 }'
 
+# DTG undergarment placement example payload
+
+req.body = '{
+  "data": {
+     "type": "orders",
+     "attributes": {
+       "vendor-po": "14679881309",
+       "marketplace": "TIKTOK",
+       "shipping-method": "SAMPLE",
+       "shipping-account-number": "1234",
+       "test-order": "test",
+       "shipping-details": {
+        "IOSS": "GB295849305",
+        "tracking_url": "https://your.shipping.label.url",
+        "tracking_number": "your tracking number"
+       }
+      }
+    },
+   "included": [
+     {
+       "type": "shipping-address",
+       "attributes": {
+         "name": "Phillip J. Fry",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+     {
+       "type": "billing-address",
+       "attributes": {
+         "name": "Hubert Farnsworth",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+        {
+          "type":"line-items",
+          "attributes":{
+            "line-number":0,
+            "quantity":1,
+            "description":"Description",
+            "product-code":"MWW-PRODUCT-CODE",
+            "designs":[
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"elastic"
+                },
+                { 
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"elastic"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"body"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"body"
+                }
+              ]
+            }
+          }
+        ]
+}'
+
 
   # Fetch Request
   res = http.request(req)
