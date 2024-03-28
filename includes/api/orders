@@ -100,6 +100,89 @@
     }
   ]
 }'</span>
+
+
+<span class="c"># DTG undergarment placement example payload</span>
+
+  <span class="nt">-d</span> <span class="s1">$'{
+"data": {
+    "type": "orders",
+    "attributes": {
+      "vendor-po": "14679881309",
+      "marketplace": "TIKTOK",
+      "shipping-method": "SAMPLE",
+      "shipping-account-number": "1234",
+      "test-order": "test",
+      "shipping-details": {
+        "IOSS": "GB295849305",
+        "tracking_url": "https://your.shipping.label.url",
+        "tracking_number": "your tracking number"
+       }
+      }
+    },
+   "included": [
+     {
+       "type": "shipping-address",
+       "attributes": {
+         "name": "Phillip J. Fry",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+     {
+       "type": "billing-address",
+       "attributes": {
+         "name": "Hubert Farnsworth",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+        {
+          "type":"line-items",
+          "attributes":{
+            "line-number":0,
+            "quantity":1,
+            "description":"Description",
+            "product-code":"MWW-PRODUCT-CODE",
+            "designs":[
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"elastic"
+                },
+                { 
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"elastic"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"body"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"body"
+                }
+              ]
+            }
+          }
+        ]
+}'</span>
+
 </code></pre></div>
 
 <div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'net/http'</span>
@@ -218,6 +301,87 @@
      }
    ]
 
+}'</span>
+
+<span class="c1"># DTG undergarment placement example payload</span>
+
+<span class="n">req</span><span class="p">.</span><span class="nf">body</span> <span class="o">=</span> <span class="s1">'{
+  "data": {
+     "type": "orders",
+     "attributes": {
+       "vendor-po": "14679881309",
+       "marketplace": "TIKTOK",
+       "shipping-method": "SAMPLE",
+       "shipping-account-number": "1234",
+       "test-order": "test",
+       "shipping-details": {
+        "IOSS": "GB295849305",
+        "tracking_url": "https://your.shipping.label.url",
+        "tracking_number": "your tracking number"
+       }
+      }
+    },
+   "included": [
+     {
+       "type": "shipping-address",
+       "attributes": {
+         "name": "Phillip J. Fry",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+     {
+       "type": "billing-address",
+       "attributes": {
+         "name": "Hubert Farnsworth",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+        {
+          "type":"line-items",
+          "attributes":{
+            "line-number":0,
+            "quantity":1,
+            "description":"Description",
+            "product-code":"MWW-PRODUCT-CODE",
+            "designs":[
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"elastic"
+                },
+                { 
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"elastic"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"body"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"body"
+                }
+              ]
+            }
+          }
+        ]
 }'</span>
 
 
@@ -353,6 +517,89 @@
             <span class="n">content</span><span class="o">=</span><span class="n">response</span><span class="p">.</span><span class="n">content</span><span class="p">))</span>
     <span class="k">except</span> <span class="n">requests</span><span class="p">.</span><span class="n">exceptions</span><span class="p">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
         <span class="k">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+
+<span class="c1"># DTG undergarment placement example payload
+</span>
+<span class="n">data</span><span class="o">=</span>
+<span class="s">"""{
+"data": {
+    "type": "orders",
+    "attributes": {
+      "vendor-po": "14679881309",
+      "marketplace": "TIKTOK",
+      "shipping-method": "SAMPLE",
+      "shipping-account-number": "1234",
+      "test-order": "test",
+      "shipping-details": {
+        "IOSS": "GB295849305",
+        "tracking_url": "https://your.shipping.label.url",
+        "tracking_number": "your tracking number"
+       }
+      }
+    },
+   "included": [
+     {
+       "type": "shipping-address",
+       "attributes": {
+         "name": "Phillip J. Fry",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+     {
+       "type": "billing-address",
+       "attributes": {
+         "name": "Hubert Farnsworth",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+        {
+          "type":"line-items",
+          "attributes":{
+            "line-number":0,
+            "quantity":1,
+            "description":"Description",
+            "product-code":"MWW-PRODUCT-CODE",
+            "designs":[
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"elastic"
+                },
+                { 
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"elastic"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"body"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"body"
+                }
+              ]
+            }
+          }
+        ]
+}"""</span>
+
 </code></pre></div>
 
 <div class="highlight"><pre class="highlight php tab-php"><code><span class="cp">&lt;?php</span>
@@ -489,6 +736,90 @@
 
 <span class="c1">// Close request to clear up some resources</span>
 <span class="nb">curl_close</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+
+
+
+
+<span class="c1"># DTG undergarment placement example payload</span>
+
+<span class="nv">$body</span> <span class="o">=</span><span class="s1">'{"data": {
+    "type": "orders",
+    "attributes": {
+      "vendor-po": "14679881309",
+      "marketplace": "TIKTOK",
+      "shipping-method": "SAMPLE",
+      "shipping-account-number": "1234",
+      "test-order": "test",
+      "shipping-details": {
+        "IOSS": "GB295849305",
+        "tracking_url": "https://your.shipping.label.url",
+        "tracking_number": "your tracking number"
+       }
+      }
+    },
+   "included": [
+     {
+       "type": "shipping-address",
+       "attributes": {
+         "name": "Phillip J. Fry",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+     {
+       "type": "billing-address",
+       "attributes": {
+         "name": "Hubert Farnsworth",
+         "address1": "123 Green St.",
+         "address2": "Suite 321",
+         "city": "New New York",
+         "state": "NY",
+         "country": "US",
+         "postal-code": "10012",
+         "email": "bob@dobalina.net",
+         "phone": "8288888888"
+       }
+     },
+        {
+          "type":"line-items",
+          "attributes":{
+            "line-number":0,
+            "quantity":1,
+            "description":"Description",
+            "product-code":"MWW-PRODUCT-CODE",
+            "designs":[
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"elastic"
+                },
+                { 
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"elastic"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"front",
+                  "placement":"body"
+                },
+                {
+                  "image-remote-url": "https://url.jpg",
+                  "location":"back",
+                  "placement":"body"
+                }
+              ]
+            }
+          }
+        ]
+}'</span>
+
 </code></pre></div>
 
 <div class="highlight"><pre class="highlight java tab-java"><code><span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
