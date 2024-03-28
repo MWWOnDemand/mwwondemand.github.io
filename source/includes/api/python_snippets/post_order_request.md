@@ -23,6 +23,7 @@ def send_request():
             "type": "orders",
             "attributes": {
               "vendor-po": "14679881092",
+              "marketplace": "TIKTOK",
               "shipping-method": "SAMPLE",
               "shipping-account-number": "1234",
               "test-order": "test",
@@ -72,7 +73,7 @@ def send_request():
                 "customer-product-code": "YOUR_UPC/SKU_NUMBER",
                 "item-properties": {
                   "thread-color": "white",
-                  "hs-code": "1234.56.789"
+                  "hs-code": "1234.56.789",
                   "declared-value": "1234.56.789"
                 },
                 "designs": [

@@ -35,6 +35,7 @@ public class SubmitOrder {
                 "\"attributes\":"+
                 "{"+
                   "\"vendor-po\": \"146798810923\","+
+                  "\"marketplace\": \"TIKTOK\","+
                   "\"shipping-method\": \"SAMPLE\","+
                   "\"shipping-account-number\": \"1234\","+
                   "\"test-order\": \"test\""+
@@ -84,7 +85,7 @@ public class SubmitOrder {
                     "\"item-properties\":"+
                     "{"+
                       "\"thread-color\": \"white\","+
-                      "\"hs-code\": \"1234.56.789\""+
+                      "\"hs-code\": \"1234.56.789\","+
                       "\"declared-value\": \"12.99\""+
                     "},"+
                     "\"designs\": ["+

@@ -25,6 +25,7 @@ $body = '{"data": {
    "type": "orders",
    "attributes": {
      "vendor-po": "1467988109",
+     "marketplace": "TIKTOK",
      "shipping-method": "SAMPLE",
      "shipping-account-number": "1234",
      "shipping-details": {
@@ -73,7 +74,7 @@ $body = '{"data": {
        "customer-product-code": "YOUR_UPC/SKU_NUMBER",
        "item-properties": {
          "thread-color": "white",
-         "hs-code": "1234.56.789" 
+         "hs-code": "1234.56.789",
          "declared-value": "12.99" 
        },
        "designs": [

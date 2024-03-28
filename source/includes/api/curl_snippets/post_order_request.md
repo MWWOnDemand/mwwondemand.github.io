@@ -8,6 +8,7 @@ curl -X "POST" "http://api.mwwondemand.com/api/orders" \
     "type": "orders",
     "attributes": {
       "vendor-po": "1467988109",
+      "marketplace": "TIKTOK",
       "shipping-method": "SAMPLE",
       "shipping-account-number": "1234",
       "test-order": "test",
