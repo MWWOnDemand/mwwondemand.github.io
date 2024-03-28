@@ -34,6 +34,7 @@
                 <span class="s">"\"attributes\":"</span><span class="o">+</span>
                 <span class="s">"{"</span><span class="o">+</span>
                   <span class="s">"\"vendor-po\": \"146798810923\","</span><span class="o">+</span>
+                  <span class="s">"\"marketplace\": \"TIKTOK\","</span><span class="o">+</span>
                   <span class="s">"\"shipping-method\": \"SAMPLE\","</span><span class="o">+</span>
                   <span class="s">"\"shipping-account-number\": \"1234\","</span><span class="o">+</span>
                   <span class="s">"\"test-order\": \"test\""</span><span class="o">+</span>
@@ -83,7 +84,7 @@
                     <span class="s">"\"item-properties\":"</span><span class="o">+</span>
                     <span class="s">"{"</span><span class="o">+</span>
                       <span class="s">"\"thread-color\": \"white\","</span><span class="o">+</span>
-                      <span class="s">"\"hs-code\": \"1234.56.789\""</span><span class="o">+</span>
+                      <span class="s">"\"hs-code\": \"1234.56.789\","</span><span class="o">+</span>
                       <span class="s">"\"declared-value\": \"12.99\""</span><span class="o">+</span>
                     <span class="s">"},"</span><span class="o">+</span>
                     <span class="s">"\"designs\": ["</span><span class="o">+</span>
