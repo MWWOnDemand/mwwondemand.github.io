@@ -109,7 +109,7 @@ public class SubmitOrder {
                     "},"+
                     "\"designs\": ["+
                       "{"+
-                        "\"image-remote-url\": \"http://www.publicdomainpictures.net/pictures/10000/velka/orange-871282749123hSB3.jpg\""+
+                        "\"image-remote-url\": \"https://www.publicdomainpictures.net/pictures/10000/velka/orange-871282749123hSB3.jpg\""+
                       "}"+
                     "]"+
                   "}"+

@@ -20,14 +20,14 @@ With Slate,
 
  At present, the sections are:
 
- * **[Introduction](http://mwwondemand.github.io/#introduction)**
- * **[Authentication](http://mwwondemand.github.io/#authentication)**
- * **[Orders](http://mwwondemand.github.io/#orders)**
- * **[Line Items](http://mwwondemand.github.io/#line-items)**
- * **[Shipping Address Update](http://mwwondemand.github.io/#shipping-address-update)**
- * **[Web Hooks](http://mwwondemand.github.io/#web-hooks)**
- * **[Errors](http://mwwondemand.github.io/#errors)**
- * **[Credits](http://mwwondemand.github.io/#credits)**
+ * **[Introduction](https://mwwondemand.github.io/#introduction)**
+ * **[Authentication](https://mwwondemand.github.io/#authentication)**
+ * **[Orders](https://mwwondemand.github.io/#orders)**
+ * **[Line Items](https://mwwondemand.github.io/#line-items)**
+ * **[Shipping Address Update](https://mwwondemand.github.io/#shipping-address-update)**
+ * **[Web Hooks](https://mwwondemand.github.io/#web-hooks)**
+ * **[Errors](https://mwwondemand.github.io/#errors)**
+ * **[Credits](https://mwwondemand.github.io/#credits)**
 
 ### Prerequisites
 
@@ -53,7 +53,7 @@ bundle exec middleman server
 vagrant up
 ```
 
-You can now see the docs at http://localhost:4567. Whoa! That was fast!
+You can now see the docs at https://localhost:4567. Whoa! That was fast!
 
 Now that Slate is all set up on your machine, you'll probably want to learn more about [editing Slate markdown](https://github.com/lord/slate/wiki/Markdown-Syntax), or [how to publish your docs](https://github.com/lord/slate/wiki/Deploying-Slate).
 
@@ -90,15 +90,15 @@ Companies Using Slate
 ---------------------------------
 
 * [NASA](https://api.nasa.gov)
-* [Sony](http://developers.cimediacloud.com)
+* [Sony](https://developers.cimediacloud.com)
 * [Best Buy](https://bestbuyapis.github.io/api-documentation/)
 * [Travis-CI](https://docs.travis-ci.com/api/)
 * [Greenhouse](https://developers.greenhouse.io/harvest.html)
-* [Woocommerce](http://woocommerce.github.io/woocommerce-rest-api-docs/)
+* [Woocommerce](https://woocommerce.github.io/woocommerce-rest-api-docs/)
 * [Dwolla](https://docs.dwolla.com/)
 * [Clearbit](https://clearbit.com/docs)
 * [Coinbase](https://developers.coinbase.com/api)
-* [Parrot Drones](http://developer.parrot.com/docs/bebop/)
+* [Parrot Drones](https://developer.parrot.com/docs/bebop/)
 * [Scale](https://docs.scaleapi.com/)
 
 You can view more in [the list on the wiki](https://github.com/lord/slate/wiki/Slate-in-the-Wild).
@@ -122,7 +122,7 @@ Thanks to the following people who have submitted major pull requests:
 - [@realityking](https://github.com/realityking)
 - [@cvkef](https://github.com/cvkef)
 
-Also, thanks to [Sauce Labs](http://saucelabs.com) for sponsoring the development of the responsive styles.
+Also, thanks to [Sauce Labs](https://saucelabs.com) for sponsoring the development of the responsive styles.
 
 Special Thanks
 --------------------
@@ -130,4 +130,4 @@ Special Thanks
 - [jquery.tocify.js](https://github.com/gfranko/jquery.tocify.js)
 - [middleman-syntax](https://github.com/middleman/middleman-syntax)
 - [middleman-gh-pages](https://github.com/edgecase/middleman-gh-pages)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+- [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
