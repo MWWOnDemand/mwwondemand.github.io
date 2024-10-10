@@ -41,7 +41,7 @@
                "english_front":"100% POLYESTER",
                "spanish_front":"100% POLIESTER",
                "label_description":"GEN -DYE ZIP PENCIL POUCH ",
-               "con_safety_website":"http://67.32.50.6/CSPC/defult.aspx",
+               "con_safety_website":"https://67.32.50.6/CSPC/defult.aspx",
                "federal_registration_number":"FEDERAL RN# 90630 ONT. REG.# 34333"
             },
             "eton_flow":83,

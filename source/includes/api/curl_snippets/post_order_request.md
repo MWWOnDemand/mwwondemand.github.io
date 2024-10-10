@@ -1,5 +1,5 @@
 ```shell
-curl -X "POST" "http://api.mwwondemand.com/api/orders" \
+curl -X "POST" "https://api.mwwondemand.com/api/orders" \
   -H "Accept: application/vnd.api+json; version=1" \
   -H "Authorization: auth-key=YOUR_API_KEY" \
   -H "Content-Type: application/vnd.api+json" \
@@ -81,7 +81,7 @@ curl -X "POST" "http://api.mwwondemand.com/api/orders" \
         },
         "designs": [
           {
-            "image-remote-url":"http://www.publicdomainpictures.net/pictures/10000/velka/orange-871282749123hSB3.jpg"
+            "image-remote-url":"https://www.publicdomainpictures.net/pictures/10000/velka/orange-871282749123hSB3.jpg"
           }
         ]
       }
