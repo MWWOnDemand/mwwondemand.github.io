@@ -28,9 +28,9 @@ Attributes ||
 data <br><em>object</em> | The root element of your JSON post object.
 type <br><em>string</em> | Resource the object represents. This will always be "orders".
 attributes <br><em>object</em> | The object that contains all the pertanent information about the order.
-vendor-po <br><em>string / number</em> | Your PO number. This string/number must be unique with every order.
+vendor-po <br><em>string / number</em> | Your PO number. This string/number must be unique with every order. <br><b class="required_field">REQUIRED</b>
 marketplace <br><em>string</em> | Optional Field to denote specific marketplace source of order. (TIKTOK)
-shipping-method <br><em>string</em> | The shipping carrier and method for the order. For example, use USPSF for USPS First Class. See shipping methods.
+shipping-method <br><em>string</em> | The shipping carrier and method for the order. For example, use USPSF for USPS First Class. See shipping methods. <br><b class="required_field">REQUIRED</b>
 shipping-account-number <br><em>string</em> | The shipping account number associated with the shipping carrier and order.
 included <br><em>array[objects]</em> | The array element describing the item(s) to be included in the order.
 test-order <br> <em> string </em> <br> optional | Optional field, 'test' for a test order, 'new' for a new regular order (defaults to 'new')
@@ -40,16 +40,16 @@ shipping-details <br> <em> object </em> <br> optional | Optional field, currentl
 
 Attributes ||
 --------- | ------- | -----------
-type <br><em>string</em> | Resource the object represents This should always be "line-items".
+type <br><em>string</em> | Resource the object represents This should always be "line-items". <br><b class="required_field">REQUIRED</b>
 attributes <br><em>object</em> | The object that contains all the pertanent information about the line-item resource.
 line-number <br><em>number</em> | Each line should have a line number in incrementing order. If omitted a line number will be automatically assigned.
-quantity <br><em>number</em> | The number of items you want to order for a given product.
+quantity <br><em>number</em> | The number of items you want to order for a given product. <br><b class="required_field">REQUIRED</b>
 description <br><em>string</em> | Your description of the item. If omitted the default product description will be used.
-product-code <br><em>string</em> | The MWW product code of the item to order.
+product-code <br><em>string</em> | The MWW product code of the item to order. <br><b class="required_field">REQUIRED</b>
 customer-product-code <br><em>string (optional)</em> | Your custom SKU or UPC number.
 item-properties <br><em>object (optional)</em> | Additional attributes for some products. This can be omitted in most cases. See products for more information. <br> Options include: alias-item-no, item-price, extended-description, wsf, thread-color, inside-neck-tape-color, cuff-color, string-color, <br>hood-thread-color, body-thread-color, waist-color, item-label, hs-code, declared-value, height, width, personalization, and unique-id
-designs <br><em>array[single object]</em> | Information about the design to be rendered.
-image-remote-url <br><em>string</em> | A publically accessible path to the source artwork.
+designs <br><em>array[single object]</em> | Information about the design to be rendered. <br><b class="required_field">REQUIRED</b>
+image-remote-url <br><em>string</em> | A publically accessible path to the source artwork. <br><b class="required_field">REQUIRED</b>
 location <br><em>string</em> | DTG products only.  This is the print location for the image (front or back)
 placement <br><em>string</em> | DTG products only. This is a customization of the location value (top-center, left-chest, etc)
 
@@ -58,20 +58,20 @@ placement <br><em>string</em> | DTG products only. This is a customization of th
 
 Attribute\* ||
 --------- | ------- | -----------
-type <br><em>string</em> | Shipping address is required. This will always be "shipping-address".
+type <br><em>string</em> | Shipping address is required. This will always be "shipping-address". <br><b class="required_field">REQUIRED</b>
 name <br><em>string</em> | The name to reference the shipment details.
-address1 <br><em>string</em> | First line of the address
+address1 <br><em>string</em> | First line of the address. <br><b class="required_field">REQUIRED</b>
 address2 <br><em>string<br>(optional)</em> | Second line of the address
-city <br><em>string</em> | The city of the shipment.
-state <br><em>string</em> | Two letter ISO 3166 alpha 2 code of the destination state, ie "NC".
-country<br><em>string<br>(optional)</em> | Two letter ISO 3166 alpha 2 code of the destination country, ie "US".  (Defaults to U.S. if not provided)
-postal-code <br><em>string</em> | The postal code of the shipment.
+city <br><em>string</em> | The city of the shipment. <br><b class="required_field">REQUIRED</b>
+state <br><em>string</em> | Two letter ISO 3166 alpha 2 code of the destination state, ie "NC". <br><b class="required_field">REQUIRED</b>
+country<br><em>string<br>(optional)</em> | Two letter ISO 3166 alpha 2 code of the destination country, ie "US".  (Defaults to U.S. if not provided) <br><b class="required_field">REQUIRED</b>
+postal-code <br><em>string</em> | The postal code of the shipment. <br><b class="required_field">REQUIRED</b>
 phone <br><em>string<br>(optional)</em> | Phone number associated with address
 email <br><em>string<br>(optional)</em> | Email associated with address
 
 
 <aside class="success">
-  * An object with type billing-address may also be proivided. If it is not provided then shipping-address will be used as the default.
+  * An object with type billing-address may also be provided. If it is not provided then shipping-address will be used as the default.
 </aside>
 
 *Packing List Details (optional)*

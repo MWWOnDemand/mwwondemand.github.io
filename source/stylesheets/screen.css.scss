@@ -472,6 +472,10 @@ html, body {
     @extend %code-font;
   }
 
+  required_field {
+    background-color: red
+  }
+
   pre>code {
     background-color: transparent;
     padding: 0;
