@@ -1089,7 +1089,7 @@
 </tr>
 <tr>
 <td>shipping-method <br><em>string</em></td>
-<td>The shipping carrier and method for the order. For example, use USPSF for USPS First Class. See shipping methods.</td>
+<td>The shipping carrier and method for the order. For example, use USPSF for USPS First Class. See shipping methods. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>shipping-account-number <br><em>string</em></td>
@@ -1123,7 +1123,7 @@
 </thead><tbody>
 <tr>
 <td>type <br><em>string</em></td>
-<td>Resource the object represents This should always be &quot;line-items&quot;.</td>
+<td>Resource the object represents This should always be &quot;line-items&quot;. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>attributes <br><em>object</em></td>
@@ -1135,7 +1135,7 @@
 </tr>
 <tr>
 <td>quantity <br><em>number</em></td>
-<td>The number of items you want to order for a given product.</td>
+<td>The number of items you want to order for a given product. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>description <br><em>string</em></td>
@@ -1143,11 +1143,11 @@
 </tr>
 <tr>
 <td>product-code <br><em>string</em></td>
-<td>The MWW product code of the item to order.</td>
+<td>The MWW product code of the item to order. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>customer-product-code <br><em>string (optional)</em></td>
-<td>Your custom SKU or UPC number.</td>
+<td>Your custom SKU or UPC number. Maximum of 30 characters.</td>
 </tr>
 <tr>
 <td>item-properties <br><em>object (optional)</em></td>
@@ -1155,11 +1155,11 @@
 </tr>
 <tr>
 <td>designs <br><em>array[single object]</em></td>
-<td>Information about the design to be rendered.</td>
+<td>Information about the design to be rendered. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>image-remote-url <br><em>string</em></td>
-<td>A publically accessible path to the source artwork.</td>
+<td>A publically accessible path to the source artwork. Must be a valid Http(s) accessible path to image file. MWW accepts png and jpg files.</td>
 </tr>
 <tr>
 <td>location <br><em>string</em></td>
@@ -1181,7 +1181,7 @@
 </thead><tbody>
 <tr>
 <td>type <br><em>string</em></td>
-<td>Shipping address is required. This will always be &quot;shipping-address&quot;.</td>
+<td>Shipping address is required. This will always be &quot;shipping-address&quot;. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>name <br><em>string</em></td>
@@ -1189,7 +1189,7 @@
 </tr>
 <tr>
 <td>address1 <br><em>string</em></td>
-<td>First line of the address</td>
+<td>First line of the address. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>address2 <br><em>string<br>(optional)</em></td>
@@ -1197,19 +1197,19 @@
 </tr>
 <tr>
 <td>city <br><em>string</em></td>
-<td>The city of the shipment.</td>
+<td>The city of the shipment. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>state <br><em>string</em></td>
-<td>Two letter ISO 3166 alpha 2 code of the destination state, ie &quot;NC&quot;.</td>
+<td>Two letter ISO 3166 alpha 2 code of the destination state, ie &quot;NC&quot;. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>country<br><em>string<br>(optional)</em></td>
-<td>Two letter ISO 3166 alpha 2 code of the destination country, ie &quot;US&quot;.  (Defaults to U.S. if not provided)</td>
+<td>Two letter ISO 3166 alpha 2 code of the destination country, ie &quot;US&quot;.  (Defaults to U.S. if not provided) <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>postal-code <br><em>string</em></td>
-<td>The postal code of the shipment.</td>
+<td>The postal code of the shipment. <br><b class="required_field">REQUIRED</b></td>
 </tr>
 <tr>
 <td>phone <br><em>string<br>(optional)</em></td>
@@ -1222,7 +1222,7 @@
 </tbody></table>
 
 <aside class="success">
-  * An object with type billing-address may also be proivided. If it is not provided then shipping-address will be used as the default.
+  * An object with type billing-address may also be provided. If it is not provided then shipping-address will be used as the default.
 </aside>
 
 <p><em>Packing List Details (optional)</em></p>
