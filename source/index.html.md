@@ -19,6 +19,7 @@ includes:
   - api/line_items
   - api/shipping_address_update
   - api/webhooks
+  - shipping_information
   - errors
   - credits
 
